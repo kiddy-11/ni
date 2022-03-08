@@ -1,0 +1,117 @@
+/*
+Theme Name:My Folio
+Author Name: My Folio
+version:1.0
+
+
+Table of content
+--------------------------------
+1.Common Css
+2.Nav Section
+3.Banner Section
+4.About Section
+5.Service Section
+6.My Work Section
+7.Contact
+ */
+
+ /* Common Css Start */
+ h1,h2,h3,h4,h5,h6,
+ p,
+ span{
+     margin: 0;
+     padding: 0;
+ }
+ a,a:hover{
+     text-decoration: none;
+ }
+ body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ :root{
+     --rr-g:#02918c;
+     --ff-f:#ffffff;
+     --cc-c:crimson;
+     --tt-t:#0b1016;
+     --ee-e:#cfc91f;
+ }
+ /* Common Css End */
+/* Navbar start */
+#my_nav{
+    background-color: var(--rr-g);
+}
+#my_nav #main_menu ul li a{
+    color: var(--ff-f);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 8px 25px;
+    margin: 10px 0;
+    transition: all linear .6s;
+}
+#my_nav #main_menu ul li:hover a{
+    background-color: var(--cc-c);
+    color: var(--ff-f);
+    border-radius: 10px;
+}
+/* Navbar end */
+/* Banner start */
+#banner .banner_item{
+    height: 700px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+    color: var(--ff-f);
+}
+#banner .banner_item::after{
+    position: absolute;
+    content:'';
+    background-color: rgba(0,0,0,0.64);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#banner .banner_item .banner_content h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_item .banner_content h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .banner_item .banner_content p{
+    font-size: 18px;
+}
+#banner .banner_item .banner_content a{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--tt-t);
+    background-color: #cfc91f;
+    display: inline-block;
+    padding: 14px 30px;
+    transition: all linear .6s;
+}
+#banner .banner_item .banner_content img{
+    display: block;
+    margin:  38px auto;
+}
+/* Banner end */
+/* About start */
+
+/*About end  */
+/* contact start */
+
+.contact_form input,
+.contact_form textarea{
+   background: none;
+   border: none;
+   border-bottom: 1px solid #ddd !important;
+   border-radius: 0;
+   text-align: center;
+   color:#fff !important;
+}
+/* contact end */
